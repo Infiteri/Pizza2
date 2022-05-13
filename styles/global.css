@@ -1,0 +1,90 @@
+:root {
+  --border-color: #291d4d;
+  --dialog-background: #fff3b4;
+
+  --menu-background: #ffe8d2;
+  --menu-border-color: #a48465;
+  --menu-font-color: #3a160d;
+  --menu-selected-background: #7fc2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.game-container {
+  position: relative;
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  outline: 1px solid #fff;
+
+  transform: scale(3) translateY(39%);
+  font-family: sans-serif;
+}
+
+.game-container canvas {
+  image-rendering: pixelated;
+}
+
+.rightIcon {
+  image-rendering: pixelated;
+}
+
+.rightPizza {
+  image-rendering: pixelated;
+}
+
+.Choice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 36px;
+  padding: 4px;
+  background: var(--menu-background);
+  border-top: 1px solid var(--menu-border-color);
+  color: var(--menu-font-color);
+}
+
+.Choice .TextMessage_button {
+  margin: 0;
+  font-size: 8px;
+  padding: 0;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+
+  display: flex;
+}
+
+.Choice .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Choice .btn button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Choice .choiceBtn {
+  border: 1px solid var(--menu-border-color);
+  background-color: var(--menu-background);
+  margin-top: 4px;
+}
